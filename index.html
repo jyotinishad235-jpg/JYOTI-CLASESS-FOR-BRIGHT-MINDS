@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyoti Classes | Expert Teaching & Academic Excellence</title>
+    <title>Jyoti Classes | CBSE Expert Coaching in Sultanpuri, Delhi</title>
     <style>
         /* Modern Design Variables */
         :root {
             --primary-color: #2563eb; /* Professional Blue */
             --secondary-color: #1e3a8a; /* Deep Navy */
             --accent-color: #facc15; /* Warning/Highlight Gold */
+            --whatsapp-color: #25d366; /* WhatsApp Green */
             --text-dark: #1f2937;
             --text-light: #f9fafb;
             --bg-light: #f3f4f6;
@@ -93,6 +94,13 @@
             margin-right: auto;
         }
 
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
         .cta-btn {
             background-color: var(--accent-color);
             color: var(--secondary-color);
@@ -108,6 +116,11 @@
         .cta-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .whatsapp-btn {
+            background-color: var(--whatsapp-color);
+            color: white;
         }
 
         /* Shared Section Styles */
@@ -181,27 +194,63 @@
             color: var(--secondary-color);
         }
 
-        /* About Section */
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        .about-text {
-            flex: 1;
-            min-width: 300px;
+        /* About Section Layout */
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
         }
 
         .about-text p {
             margin-bottom: 15px;
+            font-size: 17px;
         }
 
-        /* Contact Section Form */
+        .info-box {
+            background-color: #fffbeb;
+            border: 1px solid #fef3c7;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            color: #b45309;
+            margin-bottom: 15px;
+        }
+
+        .info-box ul {
+            list-style: none;
+        }
+
+        .info-box ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Contact Section Details */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info-panel h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-details-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .contact-details-list li {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
         .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
             background-color: var(--bg-light);
             padding: 40px;
             border-radius: 8px;
@@ -266,9 +315,9 @@
             <a href="#" class="logo">🎓 Jyoti Classes</a>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#why-jyoti">Why Jyoti Classes</a></li>
-                <li><a href="#classes">Our Courses</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#why-jyoti">Why Choose Us</a></li>
+                <li><a href="#classes">Courses</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -277,11 +326,14 @@
     <!-- Hero Introduction -->
     <section class="hero">
         <h1>Jyoti Classes</h1>
-        <p>Empowering Students to Excel. Expert home and online coaching classes designed to build confidence, improve grades, and unlock your true potential.</p>
-        <a href="#contact" class="cta-btn">Book a Free Demo Class</a>
+        <p>Premium CBSE board coaching catering to academic excellence. Helping your child build structural confidence and reach top grades.</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="cta-btn">Book a Demo Class</a>
+            <a href="https://wa.me." target="_blank" class="cta-btn whatsapp-btn">💬 Chat on WhatsApp</a>
+        </div>
     </section>
 
-    <!-- NEW SECTION: Why Jyoti Classes (Added Before BrightMinds Section) -->
+    <!-- Why Jyoti Classes Section -->
     <section id="why-jyoti" style="background-color: #fafafa;">
         <h2 class="section-title">Why Choose Jyoti Classes?</h2>
         <div class="specials-grid">
@@ -291,38 +343,16 @@
             </div>
             <div class="special-card">
                 <h3>📚 Comprehensive Material</h3>
-                <p>Top-tier notes, worksheets, and mock tests prepared for optimal score boosts.</p>
+                <p>Top-tier notes, worksheets, and mock tests prepared specifically for the CBSE board curriculum.</p>
             </div>
             <div class="special-card">
-                <h3>📈 Regular Progress Reports</h3>
-                <p>Detailed mapping of test scores shared transparently with parents monthly.</p>
+                <h3>📈 5+ Years of Experience</h3>
+                <p>A proven track record of structural guidance, ensuring students dramatically boost their core academic performance.</p>
             </div>
         </div>
     </section>
 
-    <!-- BrightMinds Courses Section -->
+    <!-- Courses Offered Section -->
     <section id="classes">
-        <h2 class="section-title">BrightMinds Academic Courses</h2>
+        <h2 class="section-title">Our Academic Courses</h2>
         <div class="classes-grid">
-            <div class="class-card">
-                <h3>Primary Education (Grades 1-5)</h3>
-                <p>Building strong foundational concepts in Mathematics, Science, and English with highly interactive and creative teaching methods.</p>
-            </div>
-            <div class="class-card">
-                <h3>Middle School (Grades 6-8)</h3>
-                <p>Conceptual clarity and academic skill enhancement across all core subjects to ease the transition into higher secondary levels.</p>
-            </div>
-            <div class="class-card">
-                <h3>High School & Boards (Grades 9-12)</h3>
-                <p>Targeted exam preparation, comprehensive test series, and personalized doubt-solving sessions for board exams.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" style="background-color: #fafafa;">
-        <h2 class="section-title">Our Teaching Philosophy</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p><strong>Experienced Tutors:</strong> At Jyoti Classes, our team consists of qualified educators passionate about student success.</p>
-                <p><strong>Small Batch Sizes:</strong> We maintain strictly limited batch numbers to ensure each student gets individual focus and tracking.</p>
