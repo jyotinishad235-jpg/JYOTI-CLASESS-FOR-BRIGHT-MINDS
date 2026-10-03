@@ -94,7 +94,7 @@
             margin-right: auto;
         }
 
-        .cta-buttons {
+        .cta-container {
             display: flex;
             justify-content: center;
             gap: 15px;
@@ -194,8 +194,8 @@
             color: var(--secondary-color);
         }
 
-        /* About Section Layout */
-        .about-container {
+        /* About & Philosophy Layout */
+        .about-layout {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
@@ -203,32 +203,32 @@
 
         .about-text p {
             margin-bottom: 15px;
-            font-size: 17px;
+            font-size: 16px;
         }
 
-        .info-box {
+        .quick-info-box {
             background-color: #fffbeb;
             border: 1px solid #fef3c7;
             padding: 25px;
             border-radius: 8px;
         }
 
-        .info-box h3 {
+        .quick-info-box h3 {
             color: #b45309;
             margin-bottom: 15px;
         }
 
-        .info-box ul {
+        .quick-info-box ul {
             list-style: none;
         }
 
-        .info-box ul li {
-            margin-bottom: 10px;
+        .quick-info-box ul li {
+            margin-bottom: 12px;
             font-size: 16px;
         }
 
-        /* Contact Section Details */
-        .contact-container {
+        /* Contact Section Form and Details */
+        .contact-layout {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
@@ -240,12 +240,12 @@
             font-size: 24px;
         }
 
-        .contact-details-list {
+        .info-list {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        .contact-details-list li {
+        .info-list li {
             margin-bottom: 15px;
             font-size: 16px;
         }
@@ -316,8 +316,8 @@
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#why-jyoti">Why Choose Us</a></li>
-                <li><a href="#classes">Courses</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#classes">Our Courses</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -326,9 +326,9 @@
     <!-- Hero Introduction -->
     <section class="hero">
         <h1>Jyoti Classes</h1>
-        <p>Premium CBSE board coaching catering to academic excellence. Helping your child build structural confidence and reach top grades.</p>
-        <div class="cta-buttons">
-            <a href="#contact" class="cta-btn">Book a Demo Class</a>
+        <p>Empowering Students to Excel. Expert coaching classes aligned with the CBSE board, custom-tailored to boost performance and build absolute conceptual clarity.</p>
+        <div class="cta-container">
+            <a href="#contact" class="cta-btn">Book a Free Demo Class</a>
             <a href="https://wa.me." target="_blank" class="cta-btn whatsapp-btn">💬 Chat on WhatsApp</a>
         </div>
     </section>
@@ -339,20 +339,18 @@
         <div class="specials-grid">
             <div class="special-card">
                 <h3>✨ Personalized Attention</h3>
-                <p>We tailor our teaching techniques to match every student's learning speed.</p>
+                <p>We tailor our teaching techniques to match every student's learning speed and capacity.</p>
             </div>
             <div class="special-card">
                 <h3>📚 Comprehensive Material</h3>
-                <p>Top-tier notes, worksheets, and mock tests prepared specifically for the CBSE board curriculum.</p>
+                <p>Top-tier notes, dedicated CBSE-focused worksheets, and mock test routines designed for maximum score boosts.</p>
             </div>
             <div class="special-card">
-                <h3>📈 5+ Years of Experience</h3>
-                <p>A proven track record of structural guidance, ensuring students dramatically boost their core academic performance.</p>
+                <h3>📈 5+ Years of Excellence</h3>
+                <p>A proven track record of shifting core academic mindsets and dramatically enhancing student confidence.</p>
             </div>
         </div>
     </section>
 
-    <!-- Courses Offered Section -->
+    <!-- Courses Section -->
     <section id="classes">
-        <h2 class="section-title">Our Academic Courses</h2>
-        <div class="classes-grid">
